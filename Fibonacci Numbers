@@ -1,0 +1,15 @@
+n = int(input("Number of terms: "))
+n1, n2 = 0, 1
+c = 0
+
+if n <= 0:
+   print("Invalid number!")
+elif n == 1:
+   print(n1)
+else:
+   while c < n:
+       print(n1)
+       r = n1 + n2
+       n1 = n2
+       n2 = r
+       c += 1
